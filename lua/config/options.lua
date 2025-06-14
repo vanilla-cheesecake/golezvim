@@ -22,3 +22,14 @@ if vim.fn.has("wsl") == 1 then
     cache_enabled = 0,
   }
 end
+
+-- User terminal powershell
+vim.opt.shell = "pwsh"
+vim.opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command"
+vim.opt.shellquote = ""
+vim.opt.shellxquote = ""
+vim.opt.showmode = false
+vim.opt.number = false
+vim.opt.relativenumber = false
+vim.opt.signcolumn = "no"
+vim.opt.laststatus = 3
